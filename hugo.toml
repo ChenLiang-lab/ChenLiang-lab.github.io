@@ -1,22 +1,22 @@
 baseURL = 'https://ChenLiang-lab.github.io/'
 theme = 'stack'
 defaultContentLanguage = 'zh-cn'
-title = 'ChenLiang-lab ?????'
+title = 'ChenLiang-lab的技术博客'
 
 [menu]
   [[menu.main]]
     identifier = 'home'
-    name = '??'
+    name = '首页'
     url = '/'
     weight = 1
   [[menu.main]]
     identifier = 'posts'
-    name = '??'
+    name = '归档'
     url = '/post/'
     weight = 3
   [[menu.main]]
     identifier = 'tags'
-    name = '??'
+    name = '标签'
     url = '/tags/'
     weight = 4
 

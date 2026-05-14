@@ -1,6 +1,6 @@
 ---
-title: 关于我
-description: 认识一下博客的作者
+title: "关于我"
+description: "认识博客作者"
 date: 2026-05-14
 slug: about
 menu:
@@ -12,11 +12,11 @@ menu:
 
 ## 关于本站
 
-这是一个用 Hugo + Stack 主题搭建的个人博客。
+这是一个 Hugo + Stack 博客。
 
 ## 关于我
 
-一位全栈开发者，热爱技术，持续学习中。
+一位全栈开发者。
 
 ## 联系我
 
