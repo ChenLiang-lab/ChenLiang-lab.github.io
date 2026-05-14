@@ -1,0 +1,56 @@
+baseURL = 'https://ChenLiang-lab.github.io/'
+theme = 'stack'
+defaultContentLanguage = 'zh-cn'
+title = 'ChenLiang-lab 的技术博客'
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = '首页'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'posts'
+    name = '归档'
+    url = '/post/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'search'
+    name = '搜索'
+    url = '/search/'
+    weight = 3
+
+[params]
+  mainSections = ['post']
+
+  [params.footer]
+    since = 2026
+
+  [params.sidebar]
+    compact = false
+    avatar = ''
+
+  [params.article]
+    toc = true
+    readingTime = true
+    [params.article.list]
+      showTags = true
+
+  [params.widgets]
+    homepage = ['recent-posts']
+    page = ['archives', 'tag-cloud']
+
+  [params.colorScheme]
+    toggle = true
+    default = 'auto'
+
+  [params.imageProcessing]
+    [params.imageProcessing.content]
+      widths = [800, 1600, 2400]
+      enabled = true
+    [params.imageProcessing.thumbnail]
+      enabled = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+  section = ['HTML', 'RSS']
