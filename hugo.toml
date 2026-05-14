@@ -1,24 +1,30 @@
 baseURL = 'https://ChenLiang-lab.github.io/'
 theme = 'stack'
 defaultContentLanguage = 'zh-cn'
-title = 'ChenLiang-lab 的技术博客'
+title = 'ChenLiang-lab ?????'
 
 [menu]
   [[menu.main]]
     identifier = 'home'
-    name = '首页'
+    name = '??'
     url = '/'
     weight = 1
   [[menu.main]]
     identifier = 'posts'
-    name = '归档'
+    name = '??'
     url = '/post/'
-    weight = 2
-  [[menu.main]]
-    identifier = 'search'
-    name = '搜索'
-    url = '/search/'
     weight = 3
+  [[menu.main]]
+    identifier = 'tags'
+    name = '??'
+    url = '/tags/'
+    weight = 4
+
+[pagination]
+    pagerSize = 5
+
+[permalinks]
+    post = '/:slug/'
 
 [params]
   mainSections = ['post']
@@ -28,7 +34,6 @@ title = 'ChenLiang-lab 的技术博客'
 
   [params.sidebar]
     compact = false
-    avatar = ''
 
   [params.article]
     toc = true
@@ -41,6 +46,8 @@ title = 'ChenLiang-lab 的技术博客'
       { type = 'recent-posts', params = { limit = 5 } }
     ]
     page = [
+      { type = 'toc' },
+      { type = 'categories', params = { limit = 10 } },
       { type = 'archives', params = { limit = 10 } },
       { type = 'tag-cloud' }
     ]
