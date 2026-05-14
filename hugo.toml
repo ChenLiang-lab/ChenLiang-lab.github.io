@@ -37,8 +37,13 @@ title = 'ChenLiang-lab 的技术博客'
       showTags = true
 
   [params.widgets]
-    homepage = ['recent-posts']
-    page = ['archives', 'tag-cloud']
+    homepage = [
+      { type = 'recent-posts', params = { limit = 5 } }
+    ]
+    page = [
+      { type = 'archives', params = { limit = 10 } },
+      { type = 'tag-cloud' }
+    ]
 
   [params.colorScheme]
     toggle = true
