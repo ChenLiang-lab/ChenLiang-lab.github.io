@@ -1,11 +1,11 @@
 ---
-title: "关于我"
+title: "关于"
 description: "认识博客作者"
 date: 2026-05-14
 slug: about
 menu:
     main:
-        weight: -90
+        weight: 40
         params:
             icon: user
 ---
