@@ -1,26 +1,28 @@
-baseURL = 'https://ChenLiang-lab.github.io/'
+﻿import codecs
+
+toml = '''baseURL = 'https://ChenLiang-lab.github.io/'
 theme = 'stack'
 defaultContentLanguage = 'zh-cn'
-title = 'ChenLiang-lab的技术博客'
+title = 'ChenLiang-lab\u7684\u6280\u672f\u535a\u5ba2'
 
 [menu]
   [[menu.main]]
     identifier = 'home'
-    name = '首页'
+    name = '\u9996\u9875'
     url = '/'
     weight = 1
     [menu.main.params]
       icon = 'home'
   [[menu.main]]
     identifier = 'posts'
-    name = '归档'
+    name = '\u5f52\u6863'
     url = '/post/'
     weight = 3
     [menu.main.params]
       icon = 'archives'
   [[menu.main]]
     identifier = 'tags'
-    name = '标签'
+    name = '\u6807\u7b7e'
     url = '/tags/'
     weight = 4
     [menu.main.params]
@@ -74,3 +76,8 @@ title = 'ChenLiang-lab的技术博客'
 [outputs]
   home = ['HTML', 'RSS', 'JSON']
   section = ['HTML', 'RSS']
+'''
+
+with codecs.open('E:/DeveloperSpace/Codex/Blog/hugo.toml', 'w', 'utf-8') as f:
+    f.write(toml)
+print('hugo.toml updated')
