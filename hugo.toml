@@ -45,17 +45,14 @@ title = 'Alan_Chli的博客'
     toc = true
     readingTime = true
     [params.article.list]
-      showTags = true
+      showTags = false
 
   [params.widgets]
     homepage = [
       { type = 'recent-posts', params = { limit = 5 } }
     ]
     page = [
-      { type = 'toc' },
-      { type = 'categories', params = { limit = 10 } },
-      { type = 'archives', params = { limit = 10 } },
-      { type = 'tag-cloud' }
+      { type = 'toc' }
     ]
 
   [params.colorScheme]
