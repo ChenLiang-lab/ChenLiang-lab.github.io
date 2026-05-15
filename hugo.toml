@@ -52,7 +52,8 @@ title = 'Alan_Chli的博客'
       { type = 'recent-posts', params = { limit = 5 } }
     ]
     page = [
-      { type = 'toc' }
+      { type = 'toc' },
+      { type = 'calendar' }
     ]
 
   [params.colorScheme]
