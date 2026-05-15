@@ -49,9 +49,7 @@ title = 'Alan_Chli的博客'
 
   [params.widgets]
     homepage = [
-      { type = 'search' },
-      { type = 'recent-posts', params = { limit = 5 } },
-      { type = 'categories', params = { limit = 10 } }
+      { type = 'recent-posts', params = { limit = 5 } }
     ]
     page = [
       { type = 'toc' },
